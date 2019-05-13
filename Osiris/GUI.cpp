@@ -6,9 +6,7 @@
 #include "Hacks/Misc.h"
 #include "Hacks/Visuals.h"
 
-const auto[width, height] = interfaces.surface->getScreenSize();
-static float skreen_height = height;
-static float skreen_width = width;
+const auto[skreen_width, skreen_height] = interfaces.surface->getScreenSize();
 
 constexpr auto windowFlags = ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize
 | ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse;
